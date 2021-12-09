@@ -11,7 +11,7 @@ public class person {
        // person(name, age);
         //setAge(age);
         this.name=name;
-        this.age=age;
+        person.age=age;
     }
     public String show(){
         return name + " " + age;
