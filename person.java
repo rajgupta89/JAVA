@@ -7,7 +7,7 @@ public class person {
         this();
         SetName(name);
     }
-    public person(String name, int age) {
+    public person(String name, int age) { 
         person(name);
         setAge(age);
     }
