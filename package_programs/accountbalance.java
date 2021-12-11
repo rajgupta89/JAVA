@@ -5,7 +5,7 @@ import java.util.regex.*;
 
 public class accountbalance {
     public static void main(String[] args) {
-        balance obj=new balance("Raj", 25.2);
+        balance obj=new balance("Raj Gupta", 25.2);
         obj.show();
         System.out.println("Date : "+ new Date());
         try (Scanner sc = new Scanner(System.in)) {
