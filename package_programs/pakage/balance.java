@@ -8,6 +8,6 @@ public class balance {
         this.bal=d;
     }
     public void show(){
-        System.out.println("Name : " + this.name + " \nBalance : " + this.bal);
+        System.out.println("Name : " + this.name + " \nBalance : " + this.bal+" Rs");
     }
 }
