@@ -13,7 +13,7 @@ public class test {
         test check2=new test();
         check1.changecount();
         check2.changecount();
-        System.out.println("Static variable value - "+check1.c+" : "+check1.c);
+        System.out.println("Static variable value - "+test.c+" : "+test.c); // here test.c is used instead of check1.c because here c  is static.
         System.out.println("Simple variable value - "+check1.a+" : "+check1.a);
     }
 }
