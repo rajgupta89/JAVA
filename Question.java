@@ -13,5 +13,4 @@ public class Question {
         // c1.area=Math.PI*c1.getradius*c1.getradius();
         System.out.println("Area  = "+c1.getarea());
     }
-    // jdb
 }
