@@ -5,7 +5,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
-public class example5 {
+public class example4 {
     public static void main(String[] args) {
         JFrame frame=new JFrame();
         JButton b1=new JButton("Button 1");
