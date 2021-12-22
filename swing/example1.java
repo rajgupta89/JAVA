@@ -1,5 +1,3 @@
-import java.awt.Color;
-
 import javax.swing.*;
 public class example1{
     public static void main(String[] args) {
