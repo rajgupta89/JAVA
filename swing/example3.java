@@ -5,7 +5,7 @@ import java.awt.Color;
 import javax.swing.*;
 public class example3 {
     public static void main(String[] args) {
-        JFrame a=new JFrame();
+        JFrame a=new JFrame("Swing with jpanel and jframe with borderlayout");
         JButton b1=new JButton("Button 1");
         JButton b2=new JButton("Button 2");
         JButton b3=new JButton("Button 3");
