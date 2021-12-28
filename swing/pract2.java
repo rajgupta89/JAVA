@@ -1,11 +1,5 @@
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollBar;
-import javax.swing.JTextField;
-import java.awt.BorderLayout;
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 
 public class pract2 {
     public static void main(String[] args) {
@@ -14,7 +8,7 @@ public class pract2 {
         JButton b1=new JButton("Button 1");
         JButton b2=new JButton("Button 2");
         // JButton b3=new JButton("Button 3");
-        JCheckBox c=new JCheckBox();
+        // JCheckBox c=new JCheckBox();
         JScrollBar s=new JScrollBar();
         // JTextField t=new JTextField();
         p.add(b1, BorderLayout.NORTH);
