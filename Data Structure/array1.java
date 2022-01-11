@@ -10,7 +10,7 @@ import java.util.*;
             String name=sc.nextLine();
                if (name.length()>0) {
                    names.add(name);
-                   deletedarray.add(name); // this is created to store copy of name and after used for storing names after ddeleting 'ss' containing names
+                   deletedarray.add(name); // this is created to store copy of name and after used for storing names after deleting 'ss' containing names
                } else {
                    break;
                }         
