@@ -12,7 +12,7 @@ public class palindrome {
             n /= 10;
             sum = (sum * 10) + m;
         }
-        // System.out.println(p);
+        System.out.println(sum);
         if (p == sum) {
             System.out.println("It is palindrome Number");
         } else {
