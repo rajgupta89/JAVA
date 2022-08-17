@@ -11,15 +11,18 @@ public class fascinating {
         b=Integer.toString(num1);
         c=Integer.toString(num2);       
         d=a+b+c;
+        ArrayList<Character> li=new ArrayList<Character>();
         for (int i = 0; i < d.length(); i++) {
             char ch=d.charAt(i);
             for (char j = '1'; j <= '9'; j++) {
                 if (ch==j) {
-                    count++;
+                    if(! li.contains(ch)){
+                        li.add(ch);
+                    }
                 }
             }
         }
-            if (count==9) {
+            if (li.size()==9) {
                 System.out.println(n+" is a facinating number");
              } else {
                 System.out.println(n+" is not a facinating number");

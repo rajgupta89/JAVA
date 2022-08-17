@@ -1,0 +1,58 @@
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+*{
+    
+    /* background-color: rgba(0, 47, 255, 0.76); */
+    border-radius: 5px;
+}
+.login{
+    background-color: white;
+    
+
+}
+h5{
+    background-color: rgba(128, 128, 128, 0.411);
+}
+.name form, table, tr, td, label,input,select,option,textarea{
+    background-color: white;
+}
+.detail,*{
+    padding: 2px;
+    margin: 0.7px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+}
+.bodyyy{
+    background-color: blue;
+}
+.inner{
+    background-color: white;
+}
+h6{
+    background-color: white;
+    color: red;
+}
+.india{
+    background-color: white;
+    font-weight: lighter;
+}
+label{
+    color: rgb(141, 17, 17);
+    font-weight: bold;
+}
+input,select,textarea{
+    border-color: rgb(0, 132, 255);
+}
+.value input{
+    background-color: blue;
+    color: white;
+}
+.it{
+    background-color: blue;
+}

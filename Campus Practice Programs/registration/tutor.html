@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validate() {
+            var username = document.reg_form.username.value;
+            var password = document.reg_form.password;
+            var secret_question = document.reg_form.secret_question.value;
+            var answer = document.reg_form.answer.value;
+            var name = document.reg_form.name.value;
+            var gender = document.reg_form.gender.value;
+            var age = document.reg_form.age.value;
+            var location = document.reg_form.location.value;
+            var code = document.reg_form.code.value;
+            var area = document.reg_form.area.value;
+            var address = document.reg_form.address.value;
+            var number = document.reg_form.number.value;
+            var email = document.reg_form.email.value;
+            var mobile = document.reg_form.mobile;
+            var course = document.reg_form.course;
+
+            if (username == null || username == "") {
+                alert("username must be filled out");
+                username.focus();
+                return false;
+            } else if (username.length > 20) {
+                alert("username cannot be more than 20 characters");
+                return false;
+            } else if (/[^a-zA-Z0-9\-\/]/.test(username)) {
+                alert('username can only contain alphanumeric characters');
+                return false;
+            }
+            if (password.value.length < 8 || password.value.length > 20) {
+                alert("password length should be between 8 to 20");
+                password.focus();
+                return false;
+            }
+            if (secret_question == "select course") {
+                alert("Secret question is required");
+                // course.focus();    
+                return false;
+            }
+            if (answer == null || answer == "") {
+                alert("answer must be filled out");
+                return false;
+            }
+            if (name == null || name == "") {
+                alert("name must be filled out");
+                return false;
+            }
+            if (gender == "select course") {
+                alert("gender is required");
+                // course.focus();    
+                return false;
+            }
+            if (age == "select course") {
+                alert("age is required");
+                // course.focus();    
+                return false;
+            }
+            if (location == "select course") {
+                alert("location is required");
+                // course.focus();    
+                return false;
+            }
+            if (code.length != 6) {
+                alert("Correct code is required. Enter correct 6 digit code");
+                // password.focus();
+                return false;
+            }
+            if (area == null || area == "") {
+                alert("area must be filled out");
+                // username.focus();
+                return false;
+            }
+            else if (/[^a-zA-Z0-9\-\/]/.test(area)) {
+                alert('Area should not contain any special character');
+                return false;
+            }
+            if (address == null || address == "") {
+                alert("Present address must be filled out");
+                return false;
+            }
+            if (number.length != 10) {
+                alert("Correct number is required. Enter correct 10 digit number");
+                // password.focus();
+                return false;
+            }
+            if (email.length <= 0) {
+                alert("Email address is required");
+                // email.focus();
+                return false;
+            }
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bodyyy">
+        <div class="back">
+            <p>Tutor Registration Form</p>
+            <p><label class="it">*</label> Required fields</p>
+        </div>
+        <div class="inner">
+            <div class="login">
+                <h5>Tutor login information</h5>
+            </div>
+            <div class="name">
+                <form method="" action="" name="reg_form" onsubmit="return validate()">
+
+                    <table>
+                        <tr>
+                            <td><label>Desired username :* </label></td>
+                            <td>
+                                <input type="text" name="username" placeholder=>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Choose password :* </label></td>
+                            <td>
+                                <input type="text" name="password" placeholder=>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Secret question: </label></td>
+                            <td>
+                                <select name="secret_question">
+                                    <option value="select course">Select Secret Question</option>
+                                    <option value="HTML">HTML</option>
+                                    <option value="CSS">CSS</option>
+                                    <option value="JavaScript">JAVASCRIPT</option>
+                                    <option value="Java">JAVA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Answer : </label></td>
+                            <td>
+                                <input type="text" name="answer" placeholder=>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="login">
+                                    <h5>Personal Details & Tutor Contact information</h5>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Name :* </label></td>
+                            <td>
+                                <input type="text" name="name" placeholder=>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender :* </label></td>
+                            <td>
+                                <select name="gender">
+                                    <option value="select course">-: Gender :-</option>
+                                    <option value="HTML">Male</option>
+                                    <option value="CSS">Female</option>
+                                </select>
+                            </td>
+                        <tr>
+                        <tr>
+                            <td><label>Age :* </label></td>
+                            <td>
+                                <select name="age">
+                                    <option value="select course">- Select -</option>
+                                    <option value="HTML">25</option>
+                                    <option value="HTML">26</option>
+                                    <option value="HTML">27</option>
+                                    <option value="HTML">28</option>
+                                    <option value="HTML">29</option>
+                                    <option value="HTML">30</option>
+                                    <option value="HTML">31</option>
+                                    <option value="HTML">32</option>
+                                    <option value="HTML">33</option>
+                                    <option value="HTML">34</option>
+                                    <option value="HTML">35</option>
+                                    <option value="HTML">36</option>
+                                    <option value="HTML">37</option>
+                                    <option value="HTML">38</option>
+                                    <option value="HTML">39</option>
+                                    <option value="HTML">40</option>
+                                    <option value="HTML">41</option>
+                                    <option value="HTML">42</option>
+                                    <option value="HTML">43</option>
+                                    <option value="HTML">44</option>
+                                    <option value="HTML">45</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Country :*</label></td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><label>Location :* </label></td>
+                            <td>
+                                <select name="location">
+                                    <option value="select course">-" Select your location :-</option>
+                                    <option value="HTML">Jabalpur</option>
+                                    <option value="HTML">Delhi</option>
+                                    <option value="HTML">Hyderabad</option>
+                                    <option value="HTML">Chennai</option>
+                                    <option value="HTML">Mumbai</option>
+                                    <option value="HTML">Pune</option>
+                                    <option value="HTML">Bangalore</option>
+                                    <option value="HTML">Indore</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Postal/Zip code :* </label></td>
+                            <td>
+                                <input type="text" name="code" placeholder=>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Area : </label></td>
+                            <td>
+                                <input type="text" name="area" placeholder=>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Present address :* </label></td>
+                            <td>
+                                <!-- <input type="textarea" size="50" name="address" placeholder=>     -->
+                                <textarea rows="5" cols="20" name="address">
+
+                             </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Contact Number :* </label></td>
+                            <td>
+                                <input type="number" name="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Email address :* </label></td>
+                            <td>
+                                <input type="text" name="email" placeholder="example@gmail.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Upload Photo : </label></td>
+                            <td>
+                                <!-- <input type="text" name="email" placeholder="example@gmail.com">     -->
+                                <input type="file" id="myFile" name="upload">
+                                <h6>(*.jpg,*.png,*.gif)</h6>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="value"></td>
+                            <td class="value" style="display: flex; justify-content: center;">
+                                <input type="submit" name="submit" value="Continue">
+                                <!-- <input type="reset" name="reset" value="Reset">     -->
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="myscript.js"></script> -->
+
+</body>
+
+</html>
