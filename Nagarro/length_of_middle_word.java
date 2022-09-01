@@ -10,6 +10,7 @@ import java.util.*;
              System.out.println(maxx);
          }
          else{
+             
              System.out.println(s_arr[len/2].length());
          }
      }    
